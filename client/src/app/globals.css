@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+.container {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  width: 100vw;
+}
+
+.authForms{
+  display:flex;
+  background-color: bisque;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  height:50%;
+  width: 50%;
+  gap: 1rem;
+}
+
+.authForms > button {
+  margin-top: 10px;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: bisque
+}
+
+.authForms > input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  width: 90%;
+}
+
+.authForms > h1 {
+  font-weight: bold;
+}
+
+.msgYou {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  text-align: right;
+
+  background-color: rgb(123, 226, 107);
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.msgThem {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  align-items: left;
+
+  background-color: rgb(83, 135, 246);
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.msgYou h2, .msgThem h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
